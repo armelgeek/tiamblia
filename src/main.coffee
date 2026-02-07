@@ -5,9 +5,9 @@ Math.seedrandom("A world")
 Stats = require "stats.js"
 {gui, update_property_inspector, configure_property_inspector} = require "./dev-ui.coffee"
 World = require "./World.coffee"
-keyboard = require "./keyboard.coffee"
-sort_entities = require "./sort-entities.coffee"
-randomize_entities = require "./randomize-entities.coffee"
+keyboard = require "./keyboard.ts"
+sort_entities = require "./sort-entities.ts"
+randomize_entities = require "./randomize-entities.ts"
 require "./arrow-test.coffee"
 
 # require each entity to add it to the entity registry
