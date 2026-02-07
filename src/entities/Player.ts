@@ -1,10 +1,10 @@
 const PlayerSimpleActor = require("./abstract/SimpleActor.ts");
-const PlayerEntity = require("./abstract/PlayerEntity.coffee");
+const PlayerEntity = require("./abstract/Entity.coffee");
 const { Pose: PlayerPose } = require("skele2d");
-const PlayerBow = require("./items/PlayerBow.ts");
-const PlayerArrow = require("./items/PlayerArrow.ts");
-const PlayerDeer = require("./PlayerDeer.ts");
-const player_keyboard = require("../player_keyboard.ts");
+const PlayerBow = require("./items/Bow.ts");
+const PlayerArrow = require("./items/Arrow.ts");
+const PlayerDeer = require("./Deer.ts");
+const player_keyboard = require("../keyboard.ts");
 const { addEntityClass: addPlayerEntityClass } = require("skele2d");
 const { distance: player_distance } = require("skele2d").helpers;
 const TAU_PLAYER = Math.PI * 2;
