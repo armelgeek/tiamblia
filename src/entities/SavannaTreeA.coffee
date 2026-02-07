@@ -1,4 +1,4 @@
-Tree = require "./abstract/Tree.coffee"
+Tree = require "./abstract/Tree.ts"
 {addEntityClass} = require "skele2d"
 TAU = Math.PI * 2
 

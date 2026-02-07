@@ -1,4 +1,4 @@
-GrassyTerrain = require("../abstract/GrassyTerrain.coffee")
+GrassyTerrain = require("../abstract/GrassyTerrain.ts")
 {addEntityClass} = require("skele2d")
 
 module.exports = class SavannaGrass extends GrassyTerrain
