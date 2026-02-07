@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   context: path.join(__dirname, 'src'),
   entry: [
-    './main.coffee',
+    './main.ts',
   ],
   output: {
     path: path.join(__dirname, 'build'),
