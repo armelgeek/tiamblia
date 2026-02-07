@@ -72,7 +72,7 @@ class Water extends WaterTerrainBase {
 		this.max_y = -Infinity;
 		this.structure.onchange = () => {
 			this.waves_y = [];
-			this.waves_vy;
+			this.waves_vy = [];
 			this.min_x = Infinity;
 			this.max_x = -Infinity;
 			this.min_y = Infinity;
