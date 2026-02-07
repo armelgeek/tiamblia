@@ -1,4 +1,4 @@
-const BirdSimpleActor = require("./abstract/SimpleActor.ts");
+const BirdSimpleActor = require("./abstract/SimpleActor");
 const { addEntityClass: addBirdEntityClass } = require("skele2d");
 
 const r_bird = (): number => Math.random() * 2 - 1;

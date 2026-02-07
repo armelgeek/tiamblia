@@ -1,4 +1,4 @@
-const RabbitSimpleActor = require("./abstract/SimpleActor.ts");
+const RabbitSimpleActor = require("./abstract/SimpleActor");
 const { addEntityClass: addRabbitEntityClass } = require("skele2d");
 
 const TAU_RABBIT = Math.PI * 2;

@@ -1,6 +1,6 @@
-const FrogSimpleActor = require("./abstract/SimpleActor.ts");
+const FrogSimpleActor = require("./abstract/SimpleActor");
 const { addEntityClass: addFrogEntityClass } = require("skele2d");
-const hsl_to_rgb_hex_frog = require("../hsl-to-rgb-hex.js");
+const hsl_to_rgb_hex_frog = require("../hsl-to-rgb-hex");
 
 const TAU_FROG = Math.PI * 2;
 const r_frog = (): number => Math.random() * 2 - 1;

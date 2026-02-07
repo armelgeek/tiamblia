@@ -1,7 +1,7 @@
-const DeerSimpleActor = require("./abstract/SimpleActor.ts");
+const DeerSimpleActor = require("./abstract/SimpleActor");
 const DeerEntity = require("./abstract/Entity.coffee");
 const { addEntityClass: addDeerEntityClass } = require("skele2d");
-const hsl_to_rgb_hex_deer = require("../hsl-to-rgb-hex.js");
+const hsl_to_rgb_hex_deer = require("../hsl-to-rgb-hex");
 
 const TAU_DEER = Math.PI * 2;
 const r_deer = (): number => Math.random() * 2 - 1;

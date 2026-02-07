@@ -1,6 +1,6 @@
-const ButterflySimpleActor = require("./abstract/SimpleActor.ts");
+const ButterflySimpleActor = require("./abstract/SimpleActor");
 const { addEntityClass: addButterflyEntityClass } = require("skele2d");
-const hsl_to_rgb_hex_butterfly = require("../hsl-to-rgb-hex.js");
+const hsl_to_rgb_hex_butterfly = require("../hsl-to-rgb-hex");
 
 const r_butterfly = (): number => Math.random() * 2 - 1;
 
