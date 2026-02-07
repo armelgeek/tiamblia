@@ -89,6 +89,8 @@ class Tree extends EntityBase {
 			if (leaf.is_leaf) {
 				ctx.beginPath();
 				ctx.arc(leaf.x, leaf.y, leaf.radius!, 0, TAU);
+				ctx.fillStyle = leaf.color!;
+				ctx.fill();
 			}
 		}
 	}
