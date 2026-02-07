@@ -8,7 +8,7 @@ World = require "./World.coffee"
 keyboard = require "./keyboard.ts"
 sort_entities = require "./sort-entities.ts"
 randomize_entities = require "./randomize-entities.ts"
-require "./arrow-test.coffee"
+require "./arrow-test.ts"
 
 # require each entity to add it to the entity registry
 require "./entities/GeneticPlant.coffee"

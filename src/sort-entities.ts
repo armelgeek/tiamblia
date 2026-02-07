@@ -1,11 +1,11 @@
-const Terrain = require("./entities/abstract/Terrain.coffee");
-const Water = require("./entities/terrain/Water.coffee");
-const Cloud = require("./entities/Cloud.coffee");
-const Deer = require("./entities/Deer.coffee");
-const Player = require("./entities/Player.coffee");
-const Bow = require("./entities/items/Bow.coffee");
-const Arrow = require("./entities/items/Arrow.coffee");
-const ArcheryTarget = require("./entities/items/ArcheryTarget.coffee");
+const SortTerrain = require("./entities/abstract/Terrain.ts");
+const SortWater = require("./entities/terrain/Water.coffee");
+const SortCloud = require("./entities/Cloud.coffee");
+const SortDeer = require("./entities/Deer.coffee");
+const SortPlayer = require("./entities/Player.coffee");
+const SortBow = require("./entities/items/Bow.coffee");
+const SortArrow = require("./entities/items/Arrow.coffee");
+const SortArcheryTarget = require("./entities/items/ArcheryTarget.coffee");
 
 type EntityClass = new (...args: any[]) => any;
 type EntityFilter = (entity: any) => boolean;
@@ -19,29 +19,29 @@ const relative_sorts: Array<[EntityFilter, EntityFilter]> = [
 	// it will be handled below and shouldn't cause instability.
 
 	// The one background element.
-	[anything_other_than_c(Cloud), c(Cloud)],
+	[anything_other_than_c(SortCloud), c(SortCloud)],
 	// The archery target is effectively a line, but displayed as an oval, implying perspective.
 	// Arrows need to be visible when sticking into the target.
-	[c(Arrow), c(ArcheryTarget)],
+	[c(SortArrow), c(SortArcheryTarget)],
 	// For riding, player's legs go in front; it's implied that one goes behind,
 	// by posing the legs on top of each other.
 	// Note: there's also a special rule that makes sure there's nothing between the player and the deer.
-	[c(Player), c(Deer)],
+	[c(SortPlayer), c(SortDeer)],
 	// It looks best holding the arrow in front of the bow.
-	[c(Arrow), c(Player)],
+	[c(SortArrow), c(SortPlayer)],
 	// Player now manually sorts Bow in relation to itself (when holding it)
 	// [c(Player), c(Bow)] // can look better in some cases, but not while aiming or turning
 	// [c(Bow), c(Player)]
-	[c(Arrow), c(Bow)],
+	[c(SortArrow), c(SortBow)],
 
 	// Water is transparent, and it should discolor any entities submerged in it.
 	// [c(Water), anything_other_than_c(Terrain)]
 	// For the reflection effect, the water should be drawn after the terrain too.
-	[c(Water), anything_other_than_c(Water)],
+	[c(SortWater), anything_other_than_c(SortWater)],
 	
 	// This may end up being too general
 	// I'm keeping it at the end so any rules can override it
-	[anything_other_than_c(Terrain), c(Terrain)]
+	[anything_other_than_c(SortTerrain), c(SortTerrain)]
 ];
 
 const compare_entities = (a: any, b: any): number => {
@@ -180,8 +180,8 @@ const sort_entities = (world: World): void => {
 	// This is a special case because it can't be expressed as "A goes above B".
 	// Trees should be allowed to go above or below both the player and steed, but not between them.
 	// This rule moves the Deer closer to the Player in depth.
-	const steeds = world.getEntitiesOfType(Deer);
-	const players = world.getEntitiesOfType(Player);
+	const steeds = world.getEntitiesOfType(SortDeer);
+	const players = world.getEntitiesOfType(SortPlayer);
 	for (const steed of steeds) {
 		const player = players[0];
 		const player_index = world.entities.indexOf(player);
@@ -189,7 +189,7 @@ const sort_entities = (world: World): void => {
 		if (player && player_index - steed_index > 1) {
 			let non_steed_between = false;
 			for (const entity of world.entities.slice(steed_index + 1, player_index)) {
-				if (!(entity instanceof Deer)) {
+				if (!(entity instanceof SortDeer)) {
 					non_steed_between = true;
 					break;
 				}

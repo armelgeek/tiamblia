@@ -1,4 +1,4 @@
-Terrain = require "../abstract/Terrain.coffee"
+Terrain = require "../abstract/Terrain.ts"
 {addEntityClass} = require "skele2d"
 
 module.exports = class Rock extends Terrain

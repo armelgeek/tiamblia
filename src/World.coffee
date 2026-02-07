@@ -1,6 +1,6 @@
 
 Entity = require "./entities/abstract/Entity.coffee"
-Terrain = require "./entities/abstract/Terrain.coffee"
+Terrain = require "./entities/abstract/Terrain.ts"
 {distanceToLineSegment} = require("skele2d").helpers
 hsl_to_rgb_hex = require "./hsl-to-rgb-hex.js"
 

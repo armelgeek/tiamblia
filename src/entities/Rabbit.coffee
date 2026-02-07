@@ -1,4 +1,4 @@
-SimpleActor = require "./abstract/SimpleActor.coffee"
+SimpleActor = require "./abstract/SimpleActor.ts"
 {addEntityClass} = require "skele2d"
 
 TAU = Math.PI * 2

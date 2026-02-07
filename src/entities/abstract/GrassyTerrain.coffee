@@ -1,4 +1,4 @@
-Terrain = require("../abstract/Terrain.coffee")
+Terrain = require("../abstract/Terrain.ts")
 {lineSegmentsIntersect} = require("skele2d").helpers
 
 module.exports = class GrassyTerrain extends Terrain

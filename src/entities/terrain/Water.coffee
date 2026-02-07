@@ -1,4 +1,4 @@
-Terrain = require("../abstract/Terrain.coffee")
+Terrain = require("../abstract/Terrain.ts")
 {addEntityClass} = require("skele2d")
 {distanceToLineSegment} = require("skele2d").helpers
 

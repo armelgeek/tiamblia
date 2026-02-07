@@ -1,4 +1,4 @@
-Terrain = require "./entities/abstract/Terrain.coffee"
+Terrain = require "./entities/abstract/Terrain.ts"
 Water = require "./entities/terrain/Water.coffee"
 Cloud = require "./entities/Cloud.coffee"
 Deer = require "./entities/Deer.coffee"

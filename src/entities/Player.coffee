@@ -1,4 +1,4 @@
-SimpleActor = require "./abstract/SimpleActor.coffee"
+SimpleActor = require "./abstract/SimpleActor.ts"
 Entity = require "./abstract/Entity.coffee"
 {Pose} = require "skele2d"
 Bow = require "./items/Bow.coffee"

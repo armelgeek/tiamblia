@@ -1,4 +1,4 @@
-SimpleActor = require "./abstract/SimpleActor.coffee"
+SimpleActor = require "./abstract/SimpleActor.ts"
 {addEntityClass} = require "skele2d"
 hsl_to_rgb_hex = require "../hsl-to-rgb-hex.js"
 
