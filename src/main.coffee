@@ -3,7 +3,7 @@ Math.seedrandom("A world")
 
 {View, Mouse, Editor, Entity, Terrain} = require "skele2d"
 Stats = require "stats.js"
-{gui, update_property_inspector, configure_property_inspector} = require "./dev-ui.coffee"
+{gui, update_property_inspector, configure_property_inspector} = require "./dev-ui.ts"
 World = require "./World.ts"
 keyboard = require "./keyboard.ts"
 sort_entities = require "./sort-entities.ts"
