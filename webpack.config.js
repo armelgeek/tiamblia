@@ -43,6 +43,7 @@ const config = {
     hot: false,
   },
   resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.coffee'],
     // Temporary workaround for https://github.com/webpack/webpack/issues/16744
     // a webpack bug where importing a library built with webpack as ESM fails.
     // I provide both "module" and "main" fields in package.json in skele2d now;
@@ -53,6 +54,11 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.coffee$/,
         use: [ 'coffee-loader' ],
