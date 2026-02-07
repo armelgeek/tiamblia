@@ -170,14 +170,6 @@ class CactusTree extends CactusTreeBase {
 			ctx.stroke();
 		}
 
-		// Spikes
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		for (const _segment_name in this.structure.segments) {
-			// disable spikes for performance
-			// and because they're not quite right
-			break;
-		}
-
 		for (const point_name in this.structure.points) {
 			const leaf = this.structure.points[point_name] as CactusPoint;
 			if (leaf.is_leaf) {

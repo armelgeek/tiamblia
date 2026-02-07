@@ -74,20 +74,11 @@ interface DNA {
 	branching_angle_range: number;
 }
 
-interface Structure {
-	points: { [key: string]: Point };
-	segments: { [key: string]: any };
-	addPoint(name: string): void;
-	addSegment(params: { from: string; name: string; length: number; width: number; color: string }): void;
-	clear(): void;
-}
-
 class GeneticPlant extends GeneticPlantBase {
 	bbox_padding!: number;
 	random_index: number = 0;
 	random_values: number[] = [];
 	dna!: DNA;
-	structure!: Structure;
 
 	constructor() {
 		super();
