@@ -1,4 +1,4 @@
-const BowEntity = require("../abstract/Entity.coffee");
+const BowEntity = require("../abstract/Entity.ts");
 const { addEntityClass: addBowEntityClass } = require("skele2d");
 const TAU_BOW = Math.PI * 2;
 

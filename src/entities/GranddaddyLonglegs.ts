@@ -1,4 +1,4 @@
-const GranddaddyLonglegsEntity = require("./abstract/Entity.coffee");
+const GranddaddyLonglegsEntity = require("./abstract/Entity.ts");
 const { addEntityClass: addGranddaddyLonglegsEntityClass } = require("skele2d");
 const granddaddyLonglegsHelpers = require("skele2d").helpers;
 const TAU_GRANDDADDYLONGLEGS = Math.PI * 2;

@@ -1,4 +1,4 @@
-const CaterpillarEntity = require("./abstract/Entity.coffee");
+const CaterpillarEntity = require("./abstract/Entity.ts");
 const { addEntityClass: addCaterpillarEntityClass } = require("skele2d");
 const caterpillarHelpers = require("skele2d").helpers;
 const TAU_CATERPILLAR = Math.PI * 2;

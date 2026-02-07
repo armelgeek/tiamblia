@@ -1,4 +1,4 @@
-const CloudEntity = require("./abstract/Entity.coffee");
+const CloudEntity = require("./abstract/Entity.ts");
 const { addEntityClass: addCloudEntityClass } = require("skele2d");
 
 declare const SimplexNoise: any;

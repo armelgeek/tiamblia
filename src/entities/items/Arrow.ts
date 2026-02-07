@@ -1,4 +1,4 @@
-const ArrowEntity = require("../abstract/Entity.coffee");
+const ArrowEntity = require("../abstract/Entity.ts");
 const { addEntityClass: addArrowEntityClass } = require("skele2d");
 const skele2dHelpers = require("skele2d").helpers;
 const TAU_ARROW = Math.PI * 2;

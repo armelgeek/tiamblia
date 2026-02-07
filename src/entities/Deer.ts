@@ -1,5 +1,5 @@
 const DeerSimpleActor = require("./abstract/SimpleActor");
-const DeerEntity = require("./abstract/Entity.coffee");
+const DeerEntity = require("./abstract/Entity.ts");
 const { addEntityClass: addDeerEntityClass } = require("skele2d");
 const hsl_to_rgb_hex_deer = require("../hsl-to-rgb-hex");
 

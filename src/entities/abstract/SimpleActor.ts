@@ -3,7 +3,7 @@
 
 const { Terrain: SimpleActorTerrain } = require("skele2d");
 const { lineSegmentsIntersect } = require("skele2d").helpers;
-const Entity = require("./Entity.coffee");
+const Entity = require("./Entity.ts");
 
 interface Point {
 	x: number;

@@ -1,4 +1,4 @@
-const ArcheryTargetEntity = require("../abstract/Entity.coffee");
+const ArcheryTargetEntity = require("../abstract/Entity.ts");
 const { addEntityClass: addArcheryTargetEntityClass } = require("skele2d");
 const TAU_TARGET = Math.PI * 2;
 

@@ -1,4 +1,4 @@
-const EntityBase = require("./Entity.coffee");
+const EntityBase = require("./Entity.ts");
 const TAU = Math.PI * 2;
 
 interface BranchParams {

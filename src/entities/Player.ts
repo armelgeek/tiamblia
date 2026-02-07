@@ -1,5 +1,5 @@
 const PlayerSimpleActor = require("./abstract/SimpleActor.ts");
-const PlayerEntity = require("./abstract/Entity.coffee");
+const PlayerEntity = require("./abstract/Entity.ts");
 const { Pose: PlayerPose } = require("skele2d");
 const PlayerBow = require("./items/Bow.ts");
 const PlayerArrow = require("./items/Arrow.ts");
