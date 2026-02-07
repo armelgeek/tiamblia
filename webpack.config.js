@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   context: path.join(__dirname, 'src'),
   entry: [
-    './main.coffee',
+    './main.ts',
   ],
   output: {
     path: path.join(__dirname, 'build'),
@@ -43,6 +43,7 @@ const config = {
     hot: false,
   },
   resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
     // Temporary workaround for https://github.com/webpack/webpack/issues/16744
     // a webpack bug where importing a library built with webpack as ESM fails.
     // I provide both "module" and "main" fields in package.json in skele2d now;
@@ -54,8 +55,9 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.coffee$/,
-        use: [ 'coffee-loader' ],
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
