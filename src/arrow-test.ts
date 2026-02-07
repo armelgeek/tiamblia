@@ -1,5 +1,5 @@
-const ArrowTestArcheryTarget = require("./entities/items/ArcheryTarget.coffee");
-const ArrowTestArrow = require("./entities/items/Arrow.coffee");
+const ArrowTestArcheryTarget = require("./entities/items/ArcheryTarget.ts");
+const ArrowTestArrow = require("./entities/items/Arrow.ts");
 
 // Note: It helps to disable gravity for this test for symmetry,
 // and to disable some conditions on lodging and enable visualization of the lodging constraints.

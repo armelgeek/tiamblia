@@ -3,9 +3,9 @@ Water = require "./entities/terrain/Water.coffee"
 Cloud = require "./entities/Cloud.coffee"
 Deer = require "./entities/Deer.coffee"
 Player = require "./entities/Player.coffee"
-Bow = require "./entities/items/Bow.coffee"
-Arrow = require "./entities/items/Arrow.coffee"
-ArcheryTarget = require "./entities/items/ArcheryTarget.coffee"
+Bow = require "./entities/items/Bow.ts"
+Arrow = require "./entities/items/Arrow.ts"
+ArcheryTarget = require "./entities/items/ArcheryTarget.ts"
 
 c = (entity_class) -> (entity) -> entity instanceof entity_class
 anything_other_than_c = (entity_class) -> (entity) -> entity not instanceof entity_class

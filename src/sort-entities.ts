@@ -3,9 +3,9 @@ const SortWater = require("./entities/terrain/Water");
 const SortCloud = require("./entities/Cloud.coffee");
 const SortDeer = require("./entities/Deer.coffee");
 const SortPlayer = require("./entities/Player.coffee");
-const SortBow = require("./entities/items/Bow.coffee");
-const SortArrow = require("./entities/items/Arrow.coffee");
-const SortArcheryTarget = require("./entities/items/ArcheryTarget.coffee");
+const SortBow = require("./entities/items/Bow.ts");
+const SortArrow = require("./entities/items/Arrow.ts");
+const SortArcheryTarget = require("./entities/items/ArcheryTarget.ts");
 
 type EntityClass = new (...args: any[]) => any;
 type EntityFilter = (entity: any) => boolean;

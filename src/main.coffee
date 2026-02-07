@@ -28,9 +28,9 @@ require "./entities/Rabbit.coffee"
 require "./entities/Deer.coffee"
 require "./entities/GranddaddyLonglegs.coffee"
 Player = require "./entities/Player.coffee"
-require "./entities/items/Bow.coffee"
-require "./entities/items/Arrow.coffee"
-require "./entities/items/ArcheryTarget.coffee"
+require "./entities/items/Bow.ts"
+require "./entities/items/Arrow.ts"
+require "./entities/items/ArcheryTarget.ts"
 
 TAU = Math.PI * 2
 
