@@ -1,5 +1,5 @@
 const SortTerrain = require("./entities/abstract/Terrain");
-const SortWater = require("./entities/terrain/Water.coffee");
+const SortWater = require("./entities/terrain/Water.ts");
 const SortCloud = require("./entities/Cloud.coffee");
 const SortDeer = require("./entities/Deer.coffee");
 const SortPlayer = require("./entities/Player.coffee");
